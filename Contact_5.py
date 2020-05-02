@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
-app = Flask(__name__, template_folder= r'D:\template' )
+app = Flask(__name__, template_folder= 'template' )
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/codinglab'
 db = SQLAlchemy(app)
 
